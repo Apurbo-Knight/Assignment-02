@@ -165,3 +165,151 @@ nav{
     border-radius: 50%;
     margin-right: 12px;
 }
+
+/* change your habit part css start */
+.habits{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-around;
+}
+.habit{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.habit-des{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+.habit-des h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.habit-des p{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.move{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+.move img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.move h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.move p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+.time img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.time h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.time p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.practice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+.practice img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.practice h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.practice p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.loss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+.loss img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.loss h1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.loss p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+/* change your habit part css end */
