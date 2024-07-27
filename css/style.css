@@ -544,6 +544,7 @@ footer{
     
     nav{
         width: 90%;
+        margin-bottom: 1rem;
     }
     .nav-links{
         display: none;
@@ -572,16 +573,17 @@ footer{
         width: 80%;   
     }
     
-    .btn-1{
-        
-        top: 47%;
+    
+    .btn-1{  
+        top: 50%;
         right: 10%;
     }  
     .btn-2{
         
-        top: 80%;
-        right: 44%;
+        top: 90%;
+        right: 54%;
     }
+
     .habit-des{
         width: 100%;
     }
@@ -683,4 +685,35 @@ footer{
     .bmi-form .single {
         width: 90%;
     }
+
+    .btn-1{
+        padding: .3rem .5rem;
+       
+    }
+    .btn-2{
+        padding: .8rem .5rem;
+        
+    }
 }
+
+
+@media screen and (max-width:375px){
+    .banner-image img{
+        width: 100%;
+    }
+    .btn-1{
+        top: 65%;
+        right: 10%;
+       
+    }
+    .btn-2{
+        top: 90%;
+        right: 34%;
+        
+    }
+}
+
+
+
+
+
