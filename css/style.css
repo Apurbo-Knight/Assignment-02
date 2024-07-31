@@ -15,7 +15,7 @@ body{
 }
 .header{
     width: 100%;
-    background: linear-gradient(180.00deg,rgba(85, 59, 59, 0.027), rgba(94, 92, 88, 0.452),rgba(87, 62, 62, 0.027) 100%);
+    background: linear-gradient(180.00deg,rgba(145, 122, 122, 0.027), rgba(94, 92, 88, 0.452),rgba(133, 111, 111, 0.027) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ nav{
 .nav-links{
     display: flex;
     list-style: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(247, 246, 246, 0.178);
     border-radius: 2.5rem;
     padding: .7rem .2rem;
 }
@@ -260,7 +260,7 @@ nav{
 }
 .run-des{
     margin: 1rem 1.5rem;
-    width: 30%;
+    width: 70%;
     
 }
  .run-des h1{
@@ -292,14 +292,6 @@ nav{
     width: 500px;
     margin-right: 1rem;
 }
-.run .health{
-    width: 500px; 
-    margin-right: 1rem;
-}
-.run .health > img{
-    width: 100%;
-    object-fit: cover;  
-}
 
 .run img{
     width: 100%;
@@ -323,7 +315,7 @@ nav{
  .bmi{
     width: 30%;
     margin: 0 auto;
-    margin-bottom: 90px;
+    margin-bottom: 6rem;
  }
  
  .bmi h1{
@@ -495,6 +487,68 @@ th, td{
     padding: 1.2rem;
     margin: 0 auto;
 }
+/* our health expert part start */
+.heal{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    background: rgb(34, 34, 34);
+    margin-bottom: 7.1rem;
+    padding: 5rem 0rem;
+}
+.health-des{
+    margin: 1rem 1.5rem;
+    width: 30%;
+    
+}
+ .health-des h1{
+    color: rgb(255, 255, 255);
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 1.1rem;        
+}       
+.health-des p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 2rem;
+}
+.health-des button{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    background: rgb(230, 83, 60);
+    padding: 1rem 2.5rem;
+    border: none;
+}
+/* .heal .img{
+    width: 500px;
+    margin-right: 1rem;
+} */
+.heal .health{
+    width: 500px;
+    
+    margin-right: 1rem;
+}
+.heal .health > img{
+    width: 100%;
+    object-fit: cover;  
+}
+
+.heal img{
+    width: 100%;
+    object-fit: none;
+    /* object-position: 66% 30%; */
+    border-radius: 1.3rem;
+}
+/* our health expert part end */
 /* footer part css start */
 footer{
     background: rgba(255, 255, 255, 0.1);
@@ -562,6 +616,132 @@ footer{
 /* footer part css end */
 
 /* responsive design start */ 
+
+@media screen and  (min-width:577px) and (max-width:992px) {
+    nav{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .banner-description{
+        width: 70%;
+        margin-left: 2rem;
+    }
+    .banner-description h1{    
+        font-size: 4rem; 
+        width: 70%;
+        line-height: 4rem;
+        margin-bottom: 2rem;   
+    }
+    .banner-description p{
+        font-size: 1rem;  
+        width: 80%;   
+    }
+    .banner-image{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .btn-1{
+        top: 58%;
+        right: 10%;
+    }
+    .btn-2{
+        top: 90%;
+        right: 50%;
+    }
+    .habit-des{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .habits{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+    }
+    .cards{
+        width: 95%;
+    }
+    .cards p{
+        margin-bottom: 1.5rem;
+    }
+
+    .run{
+        width: 90%;
+    }
+    .run-des h1{
+        font-size: 2.4rem;       
+        line-height: 100%;       
+    } 
+    .run-des p{
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+    }
+    .run .img{
+        width: 500px;
+        height: 350px;
+        margin: .5rem 0.5rem;
+    }
+    
+    .run img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .calculation{
+        flex-direction: column;
+        padding-left: 2.7rem;   
+     }
+     
+     .bmi, .bmi-chart{
+        width: 90%;
+     }
+     .bmi-form{
+        max-width: 800px; 
+    }
+
+     .same{
+        width: 45%;
+    }
+    .sex{ 
+        width: 45%;
+    }
+    .single{ 
+        width: 91.8%;   
+    }
+
+    .health-des{
+        margin: 1rem 1.5rem;
+        width: 30%;
+        
+    }
+     .health-des h1{
+        font-size: 2.4rem;
+        line-height: 100%;
+        margin-bottom: 1.1rem;        
+    }       
+    .health-des p{
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.4rem;   
+    }
+
+    .foot{   
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+    }
+    .foot .description{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+}
     
 @media screen and (max-width:576px){
     
@@ -645,19 +825,6 @@ footer{
         margin-bottom: 1rem;
     }   
     
-    .run img{
-        width: 100%;
-        object-fit: cover;
-    } 
-    .run .health{
-        width: 90%; 
-        margin: 0 auto;
-        margin-bottom: 1rem;
-
-    }
-    .run .health img{
-        width: 100%;
-    }
 
     .calculation{
         flex-direction: column;
@@ -694,6 +861,31 @@ footer{
     }
     .card-1, .card-4{
         display: none;
+    }
+
+    .heal{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+ 
+    .heal .health{
+        width: 100%; 
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+    }
+    .health img{
+        padding: 1.5rem;
+        border-radius: 3rem;
+    }
+    .health-des{
+        width: 90%;
+    }
+    .health-des button{
+        width: 100%;
     }
     
 
