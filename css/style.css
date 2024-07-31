@@ -76,7 +76,7 @@ nav{
     margin-top: 1rem;
 }
 .banner-description{
-    width: 30%;
+    width: 40%;
 }
 .banner-description h1{
     color: rgb(255, 255, 255);
@@ -256,11 +256,12 @@ nav{
     border-radius: 1.3rem;
     background: rgb(34, 34, 34);
     margin-bottom: 7.1rem;
+    padding: .5rem;
 }
 .run-des{
-    margin: 2rem 3rem;
+    margin: 1rem 1.5rem;
     width: 30%;
-    height: 40%;
+    
 }
  .run-des h1{
     color: rgb(255, 255, 255);
@@ -288,15 +289,16 @@ nav{
     border: none;
 }
 .run .img{
-    width: 30%;
-    margin: 2rem;
+    width: 500px;
+    margin-right: 1rem;
 }
 .run .health{
-    width: 30%; 
-    margin: 2rem;   
+    width: 500px; 
+    margin-right: 1rem;
 }
-.run .health img{
-    object-fit: cover;
+.run .health > img{
+    width: 100%;
+    object-fit: cover;  
 }
 
 .run img{
@@ -441,7 +443,7 @@ th, td{
     text-align: center;
     margin-bottom: 1rem;
 }
-.container p{
+.container > p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
@@ -452,12 +454,12 @@ th, td{
     text-align: center;
     width: 40%;
 }
-.card{
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
     width: 41.6rem;
     height: 25.7rem;
     position: relative;
 }
-.card > img{
+.card-1 img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -623,29 +625,39 @@ footer{
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 4rem;
+        width: 90%;
     }
     .run-des{
         width: 90%;
-
-        margin-left: 1.5rem;
+        /* margin-left: 1.5rem; */
     }
     .run-des h1{
         font-size: 2.5rem; 
         margin-bottom: 1rem;        
     }  
     .run-des button{
-        width: 97%;
+        width: 98%;
+        margin-bottom: .5rem;
     }  
     .run .img{
         width: 90%;
-        /* margin: 0 auto; */
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }   
     
     .run img{
-        width: 90%;  
-        /* margin-left: -.3rem;   */
+        width: 100%;
         object-fit: cover;
     } 
+    .run .health{
+        width: 90%; 
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+    }
+    .run .health img{
+        width: 100%;
+    }
 
     .calculation{
         flex-direction: column;
@@ -671,12 +683,19 @@ footer{
     .container > h3{
         font-size: 2.5rem;
     }
-    .card{
+    .container > p{
+        width: 90%;
+    }
+    .card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
         width: 100%;
     }
     .row-1, .row-2{
         flex-direction: column;
     }
+    .card-1, .card-4{
+        display: none;
+    }
+    
 
     .foot{
         flex-direction: column;
@@ -732,6 +751,7 @@ footer{
         top: 90%;
         right: 34%;  
     }
+    
 }
 
 
