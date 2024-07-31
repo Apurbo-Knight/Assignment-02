@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 *{
     margin: 0px;
@@ -75,12 +76,12 @@ nav{
     margin-top: 1rem;
 }
 .banner-description{
-    width: 40%;
+    width: 30%;
 }
 .banner-description h1{
     color: rgb(255, 255, 255);
     font-size: 4.5rem;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 5rem;
 }
 .banner-description p{
@@ -91,7 +92,9 @@ nav{
     letter-spacing: 0.1rem;
 }
 .span{
-    font-family: "Dancing Script", cursive;
+    font-family: 'Miama', sans-serif;
+    font-weight: 500;
+    line-height: .5rem;
 }
 .buttons .join{
     color: rgb(255, 255, 255);
@@ -99,7 +102,7 @@ nav{
     font-weight: 600;
     border-radius: 3rem;
     background: rgb(230, 83, 60);
-    padding: 1rem 2rem;
+    padding: .9rem 2rem;
     border: none;
     margin-top: 1.9rem;
     margin-bottom: .4rem;
@@ -113,7 +116,7 @@ nav{
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 2.8rem;
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
 }
 
 .btn-1{
@@ -166,11 +169,15 @@ nav{
     
 }
 .btn-2 .circle{
-    height: 2.8rem;
-    width: 2.8rem;
-    background: rgb(230, 83, 60);
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
-    margin-right: .9rem;
+    background-color: rgb(230, 83, 60);
+    margin-right: .5rem;
+}
+.btn-2 .play{
+    padding-top: .65rem;
+    color: white;  
 }
 
 /* change your habit part css start */
@@ -281,12 +288,21 @@ nav{
     border: none;
 }
 .run .img{
-    width: 500px;
+    width: 30%;
     margin: 2rem;
 }
+.run .health{
+    width: 30%; 
+    margin: 2rem;   
+}
+.run .health img{
+    object-fit: cover;
+}
+
 .run img{
     width: 100%;
-    height: 100%;
+    object-fit: none;
+    object-position: 66% 30%;
     border-radius: 1.3rem;
 }
 
@@ -366,7 +382,8 @@ th, td{
     margin-top: 1rem;
 }
 .same{
-    border-radius: 8px;
+    width: 40%;
+    border-radius: .3rem;
     background: rgba(255, 255, 255, 0.1);
     padding: .5rem 1rem .5rem 1rem;
     border: none;
@@ -375,32 +392,34 @@ th, td{
     margin-right: .5rem;
 }
 .sex{ 
-    width: 12.6rem;
+    width: 40%;
     height: 2rem;
-    border-radius: .6rem;
+    border-radius: .3rem;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     color: rgba(129, 121, 121, 0.911); 
-    padding-left: 1.5rem;
+    padding-left: .7rem;
+    border-right: .5rem solid rgba(68, 65, 65, 0.1);
 }
 .single{
     display: block;
     color: rgba(129, 121, 121, 0.911);
     font-size: 1rem;
     font-weight: 400; 
-    width: 26rem;  
+    width: 83.5%;  
     height: 2rem;
-    border-radius: .6rem;
+    border-radius: .3rem;
     border: none;
     background: rgba(255, 255, 255, 0.1);
     margin-bottom: 2rem;
-    padding-left: 1rem;
+    padding-left: .6rem;
+    border-right: .5rem solid rgba(68, 65, 65, 0.1);
 }
 .inputs button{
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 1rem 2.9rem 1rem 2.9rem;
+    padding: .8rem 2.9rem ;
     border-radius: 3rem;
     background: rgb(230, 83, 60);
     border: none;
@@ -428,8 +447,10 @@ th, td{
     font-weight: 400;
     line-height: 1.7rem;
     letter-spacing: 0.3px;
+    margin: 0 auto;
     margin-bottom: 4rem;
     text-align: center;
+    width: 40%;
 }
 .card{
     width: 41.6rem;
@@ -617,11 +638,13 @@ footer{
     }  
     .run .img{
         width: 90%;
+        /* margin: 0 auto; */
     }   
     
     .run img{
-        width: 95%;  
-        margin-left: -.3rem;  
+        width: 90%;  
+        /* margin-left: -.3rem;   */
+        object-fit: cover;
     } 
 
     .calculation{
@@ -676,14 +699,14 @@ footer{
 
 @media screen and (max-width:470px){
     .bmi-form .same{
-        width: 90%;
+        width: 40%;
     }
     .bmi-form .sex {
-        width: 90%;
+        width: 40%;
         margin-bottom: 1rem;
     }
     .bmi-form .single {
-        width: 90%;
+        width: 83.5%;
     }
 
     .btn-1{
